@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title> Module 4 - Solution </title>
+
+    <!-- Scripts at Header -->
+    
+
+    <!-- Stylesheets at Header -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"></link>
+  </head>
+
+  <body>
+    <h1> Welcome to Module4-Solution </h1>
+    
+
+    <!-- Scripts at Footer -->
+    <!-- Loading the libraries -->
+    <script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Loading the modules -->
+    <script type="text/javascript" src="src/menuapp/menuapp.module.js"></script>
+    <script type="text/javascript" src="src/data/data.module.js"></script>
+
+    <!-- Loading the routes -->
+    <script type="text/javascript" src="src/menuapp/routes.js"></script>
+
+    <!-- Loading the components -->
+    <script type="text/javascript" src="src/menuapp/category/categories.component.js"></script>
+    <script type="text/javascript" src="src/menuapp/items/items.component.js"></script>
+
+    <!-- Loading the Services -->
+    <script type="text/javascript" src="src/data/menudata.service.js"></script>
+
+
+  </body>
+</html>
