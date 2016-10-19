@@ -27,8 +27,8 @@
 		resolve : {
 		    'categories': ['MenuDataService',function(MenuDataService){
 			MenuDataService.getAllCategories().then(function(categories){
-			    console.log(categories);
-			    return categories;
+			    console.log(categories.data);
+			    return categories.data;
 
 			});
 			
