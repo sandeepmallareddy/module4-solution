@@ -35,7 +35,7 @@
 	service.getItemsForCategory = function(shortname){
 	    var response = $http({
 		method : 'GET',
-		url    : (categoriesUrl+shortname),
+		url    : (itemsUrl+shortname),
 	    });
 	    
 	    return response.then(function(response){
