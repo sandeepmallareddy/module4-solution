@@ -16,7 +16,7 @@
 	//Route for main page
 	    .state('main',{
 		url: '/',
-		template: '<div>This is the categories page</div>'
+		template: '<div>Welcome to the Restaurant</div>'
 	    })
 	
 	//Route for Categories page
