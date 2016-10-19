@@ -1,3 +1,3 @@
-<li ng-repeat="category in $ctrl.categories">
-  <a class="list-group-item" ui-sref="items({category:category.short_name})">{{category.name}}</a>
+<li class="list-group-item" ng-repeat="category in $ctrl.categories" ui-sref="items({category:$ctrl.categories[$index].short_name})">
+  {{category.name}}
 </li>
