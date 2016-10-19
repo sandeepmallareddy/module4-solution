@@ -35,7 +35,14 @@
 	//Route for Categories page
 	    .state('items',{
 		url: '/items/{category}',
-		template: '<div>This is the Items page</div>'
+		templateUrl: 'src/menuapp/items/itemsstate.template.html',
+		controller : 'ItemsStateController as itemsdetail',
+		resolve : {
+		    'items' : ['$stateParams','MenuDataService',
+			       function($stateParams,MenuDataService){
+				   return MenuDataService.getItemsForCategory($stateParams.category);
+			       }] 
+		}
 	    });
 
     }
