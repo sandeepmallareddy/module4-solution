@@ -10,6 +10,7 @@
     function CategoryStateController(categories){
 
 	var categorydetails = this;
+	console.log("categories recieved",categories);
 	categorydetails.categories = categories;
 
     }

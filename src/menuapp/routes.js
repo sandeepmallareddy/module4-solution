@@ -26,9 +26,11 @@
 		controller: 'CategoryStateController as categorydetails',
 		resolve : {
 		    'categories': ['MenuDataService',function(MenuDataService){
-			var categories = MenuDataService.getAllCategories();
-			console.log(categories);
-			return categories;
+			MenuDataService.getAllCategories().then(function(categories){
+			    return categories;
+
+			});
+			
 		    }]
 		}
 	    })
