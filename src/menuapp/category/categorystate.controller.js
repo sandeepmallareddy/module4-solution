@@ -8,6 +8,8 @@
     CategoryStateController.$inject = ['categories'];
 
     function CategoryStateController(categories){
+	console.log("Categories Recieved",categories);
+
 	var categorydetails = this;
 
 	categorydetails.categories = categories;
