@@ -24,7 +24,7 @@
 	    });
 		
 	    return response.then(function(response){
-		return response.data;
+		return response;
 	    }).catch(function(error){
 		return new Error(error);
 	    });
